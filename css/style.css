@@ -1,0 +1,233 @@
+body {
+  min-width:900px;
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.main-header {
+  margin-bottom: 100px;
+  background-color: #eeeeee;
+}
+.container {
+  width: 1160px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.main-navigation {
+  float: left;
+  width: 850px;
+}
+.index-logo {
+  width: 160px;
+  float: left;
+  padding-top: 48px;
+  margin-right: 201px;
+}
+.index-logo a:hover {
+  opacity: .8;
+}
+.site-navigation li:first-child {
+  border-bottom: 2px solid  #f87f81;
+}
+.site-navigation a {
+  color: #000000;
+  text-decoration: none;
+
+}
+.main-navigation a:hover {
+  color: #f87f81;
+}
+.main-navigation ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+.site-navigation li {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  line-height: 30px;
+  padding-top: 75px;
+  margin-right: 49px;
+  text-transform: uppercase;
+
+}
+.site-navigation li:last-child {
+  margin-right: 0;
+}
+.cart {
+  position: relative;
+  float: right;
+  max-width: 120px;
+}
+.cart-item {
+  display: inline-block;
+  vertical-align: top;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 30px;
+  padding-top: 75px;
+  padding-left: 45px;
+
+}
+.cart-item::before  {
+  position: absolute;
+  content: "";
+  right: 100px;
+  top: 82px;
+  width: 15px;
+  height: 15px;
+  background: transparent url("../img/sprite.png") -5px -46px no-repeat;
+}
+.cart a:hover {
+  color: #f87f81;
+}
+.slider {
+  position: relative;
+
+}
+.slide-1, .slide-2, .slide-3, .slider input[type="radio"] {
+  display: none;
+}
+.slide-paginator {
+  position: absolute;
+  bottom: 90px;
+  left: 50%;
+  width: 300px;
+  margin-left: -150px;
+  text-align: center;
+}
+#slide1-btn:checked ~ .slide-1,
+#slide2-btn:checked ~ .slide-2,
+#slide3-btn:checked ~ .slide-3 {
+  display: block;
+}
+.slide-paginator label {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width:8px;
+  height: 8px;
+  margin: 0 5px;
+  background: #ffffff;
+  border: 5px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+#slide-btn:checked label::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: block;
+  width: 4px;
+  height: 4px;
+  border: 2px solid #c1c1c1;
+  border-radius: 50%;
+}
+#slide1-btn:checked ~ .slide-paginator label[for="slide1-btn"],
+#slide2-btn:checked ~ .slide-paginator label[for="slide2-btn"],
+#slide3-btn:checked ~ .slide-paginator label[for="slide3-btn"] {
+  background: transparent;
+}
+.slide-content {
+  float: left;
+  padding-top: 46px;
+  width: 400px;
+  padding-top: 48px;
+}
+.slide-img {
+  float: right;
+  width: 698px;
+  height: 413px;
+  padding-right: 31px;
+  padding-top: 13px;
+}
+.service-item {
+  float: left;
+  width: 300px;
+  min-height: 350px;
+  margin-right: 100px;
+}
+.service-item:last-child {
+  margin-right: 0;
+}
+.servise {
+  margin-bottom: 80px;
+}
+.description-left {
+  float: left;
+  width: 660px;
+  min-height: 530px;
+}
+.description-right {
+  float: right;
+  width: 400px;
+  min-height: 530px;
+}
+.references {
+  min-height: 185px;
+  margin-bottom: 85px;
+}
+.contact-form {
+  float: left;
+  width: 320px;
+  min-height: 310px;
+  padding-top: 44px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.main-footer {
+  margin-top: 20px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.footer-social {
+  float: left;
+  width: 260px;
+  min-height: 100px;
+  margin-right: 140px;
+}
+.footer-discount {
+  float: left;
+  min-height: 100px;
+  width: 560px;
+}
+/*---------------catalog.html-------------------------*/
+.inner-page-title {
+  padding:54px 0 84px;
+  text-align:center
+}
+.inner-page-title h1 {
+  margin:0;
+  padding:0;
+  font-size:40px;
+  line-height:48px
+}
+.shop-filter {
+  float: left;
+  width: 240px;
+
+}
+.catalog {
+  float: right;
+  width: 760px;
+}
+.catalog-item {
+  display: inline-block;
+  margin-right: 40px;
+}

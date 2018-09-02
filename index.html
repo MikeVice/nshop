@@ -3,14 +3,19 @@
   <head>
     <meta  charset="utf-8">
     <title>Nerds</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="main-header">
-      <a  class="main-header-logo">
-        <img src="img/index-logo.png" width="" height="" alt="Nerds-logo">
-      </a>
-      <div class="container">
+      <div class="container clearfix">
         <nav class="main-navigation">
+          <div class="index-logo">
+           <a  class="main-header-logo">
+            <img src="img/Nerds-logo.png" width="160" height="65" alt="Nerds-logo">
+           </a>
+          </div>
           <ul class="site-navigation">
             <li>
               <a href="#">Студия</a>
@@ -25,57 +30,56 @@
               <a href="#">Контакты</a>
             </li>
           </ul>
-          <ul class="cart">
-            <li class="cart-item">Корзина</li>
-          </ul>
         </nav>
+        <div class="cart">
+          <a class="cart-item" href="cart.html">Корзина</a>
+        </div>
+        <section class="slider">
+          <input id="slide1-btn" type="radio" name="slide-btn" checked>
+          <input id="slide2-btn" type="radio" name="slide-btn" >
+          <input id="slide3-btn" type="radio" name="slide-btn" >
+          <div class="slide-paginator">
+            <label for="slide1-btn"></label>
+            <label for="slide2-btn"></label>
+            <label for="slide3-btn"></label>
+          </div>
+          <div class="slide-1 clearfix">
+            <div class="slide-content">
+              <b>Долго, дорого,<br>cкрупулезно</b>
+              <p>Математически выверенный дезайн <br> для вашего сайта или мобильного приложения</p>
+              <a class="btn" href="#">Узнать больше</a>
+            </div>
+            <div class="slide-img">
+              <img src="img/slide1.png" width="698" height="413" alt="Платформа"/>
+            </div>
+          </div>
+        </section>
       </div>
     </header>
     <main class="container">
-      <section class="slider">
-        <div class="slider-item">
-          <h2 class="slider-item-title">Долго, дорого, скрупулезно.</h2>
-          <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-          <a class="btn" href="#">Узнать больше</a>
-          <p><img src="#" width="" height="" alt="slider1"></p>
-          <span class="slider-indicator"></span>
-        </div>
-        <div class="slider-item">
-          <h2 class="slider-item-title">Любим математику как никто другой.</h2>
-          <p>Никакого криатива, только математические формулы для расчета идеальных пропорций.</p>
-          <a class="btn" href="#">Узнать больше</a>
-          <p><img src="#" width="" height="" alt="slider2"></p>
-        </div>
-        <div class="slider-item">
-          <h2 class="slider-item-title">Только ночь, только хардкор.</h2>
-          <p>Работать днем как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-          <a class="btn" href="#">Узнать больше</a>
-          <p><img src="#" width="" height="" alt="slider3"></p>
-          <span class="slider-indicator"></span>
-        </div>
-      </section>
-      <section class="servise">
+      <section class="servise clearfix">
         <div class="service-item">
           <p><img src="#" alt="Web-sites" width="150" height="100"></p>
-          <h3 class="servise-name">веб-сайты</h3>
+          <h2 class="servise-name">Веб-сайты</h2>
           <p>Мир никогда не будет прежним после того как увидит вай сайт!</p>
           <a class="btn" href="#">Заказать</a>
         </div>
         <div class="service-item">
           <p><img src="#" alt="aplications" width="150" height="100"></p>
-          <h3 class="servise-name">приложения</h3>
+          <h2 class="servise-name">Приложения</h2>
           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
           <a class="btn" href="#">Заказать</a>
         </div>
         <div class="service-item">
           <p><img src="#" alt="Presentations" width="150" height="100"></p>
-          <h3 class="servise-name">Презентации</h3>
+          <h2 class="servise-name">Презентации</h2>
           <p>Вы даже не подозреваете, насколько вы изумительны!</p>
           <a class="btn" href="#">Заказать</a>
         </div>
       </section>
-      <section class="description">
-          <h2 class="description-title">Мы-маленькая, но гордая дизайн-студия из Краснодара.</h2>
+      <section class="description clearfix">
+        <div class="description-left">
+          <p><b class="description-title">Мы-маленькая, но гордая дизайн-студия из Краснодара.</b></p>
           <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы</p>
           <h3 class="description-list-title">Выполняем заказы на разработку:</h3>
           <ul class="description-list">
@@ -89,6 +93,8 @@
               <p>Слайдшоу и видео для корпоративных презентаций</p>
             </li>
           </ul>
+        </div>
+        <div class="description-right">
           <div class="description-logo">
             <img src="#" width="" height="" alt="Nerds-logo">
           </div>
@@ -105,6 +111,8 @@
               <td class="statistics-element"> Минимальная предоплата</td>
             </tr>
           </table>
+        </div>
+      </section>
           <div class="references">
             <ul class="references-list">
               <li class="references-item"><a href="#"><img href="#" alt="html"></a></li>
@@ -113,12 +121,12 @@
               <li class="references-item"><a href="#"><img href="#" alt="mishka"></a></li>
             </ul>
           </div>
-      </section>
       <section class="contacts">
-        <div class="contacts-map">
           <p><img href="#" alt="map" width="" height=""></p>
-          <p><img href="#" alt="marker" width="" height=""></p>
-          <div>
+          <div class="contact-marker">
+            <img href="#" alt="marker" width="" height="">
+          </div>
+          <div class="contact-form">
             <h3 class="contacts-tittle">Nerds design studio</h3>
             <p>191186,Санкт-Петербург,<br>
                ул. Б. Конюшенная, д.19/8<br>
@@ -127,10 +135,10 @@
             </p>
             <a class="btn">Напиши нам</a>
           </div>
-        </div>
       </section>
     </main>
-    <foooter class="main-footer">
+    <footer class="main-footer">
+      <div class="container clearfix">
       <div class="footer-social">
         <ul class="footer-social-list">
           <li class="footer-social-item">
@@ -143,9 +151,12 @@
             <a href="#">Инстаграм</a>
           </li>
         </ul>
+      </div>
+      <div class="footer-discount">
         <b>Давайте дружить, это выгодно!</b>
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
+    </div>
     </footer>
   </body>
 </html>
