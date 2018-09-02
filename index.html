@@ -1,61 +1,73 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta  charset="utf-8">
-    <title>Nerds</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <header class="main-header">
-      <div class="container clearfix">
-        <nav class="main-navigation">
-          <div class="index-logo">
-           <a  class="main-header-logo">
+<head>
+  <meta  charset="utf-8">
+  <title>Nerds</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="main-header">
+    <div class="container clearfix">
+      <nav class="main-navigation">
+        <div class="index-logo">
+          <a  class="main-header-logo">
             <img src="img/logo.png" width="160" height="65" alt="Nerds-logo">
-           </a>
-          </div>
-          <ul class="site-navigation">
-            <li>
-              <a href="#">Студия</a>
-            </li>
-            <li>
-              <a href="#">Клиенты</a>
-            </li>
-            <li>
-              <a href="#">Магазин</a>
-            </li>
-            <li>
-              <a href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="cart">
-          <a class="cart-item" href="cart.html">Корзина</a>
+          </a>
         </div>
-        <section class="slider">
-          <input id="slide1-btn" type="radio" name="slide-btn" checked>
-          <input id="slide2-btn" type="radio" name="slide-btn" >
-          <input id="slide3-btn" type="radio" name="slide-btn" >
-          <div class="slide-paginator">
-            <label for="slide1-btn"></label>
-            <label for="slide2-btn"></label>
-            <label for="slide3-btn"></label>
-          </div>
-          <div class="slide-1 clearfix">
-            <div class="slide-content">
-              <b>Долго, дорого,<br>cкрупулезно</b>
-              <p>Математически выверенный дезайн <br> для вашего сайта или мобильного приложения</p>
-              <a class="btn" href="#">Узнать больше</a>
-            </div>
-            <div class="slide-img">
-              <img src="img/slide1.png" width="698" height="413" alt="Платформа"/>
-            </div>
-          </div>
-        </section>
+        <ul class="site-navigation">
+          <li>
+            <a href="#">Студия</a>
+          </li>
+          <li>
+            <a href="#">Клиенты</a>
+          </li>
+          <li>
+            <a href="#">Магазин</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="cart">
+        <a class="cart-item" href="cart.html">Корзина</a>
       </div>
-    </header>
+    </div>
+  </header>
+  <section class="slider">
+    <div class="container">
+      <h2 class="visually-hidden">Преимущества</h2>
+      <input class="visually-hidden" id="product-1" type="radio" name="toggle" checked>
+      <input class="visually-hidden" id="product-2" type="radio" name="toggle">
+      <input class="visually-hidden" id="product-3" type="radio" name="toggle">
+      <div class="slider-controls">
+        <!-- <i class="active"></i>
+        <i></i>
+        <i></i> -->
+        <label class="slider-controls-item slider-controls-item-1" for="product-1"></label>
+        <label class="slider-controls-item slider-controls-item-2" for="product-2"></label>
+        <label class="slider-controls-item slider-controls-item-3" for="product-3"></label>
+      </div>
+      <ul class="slider-list">
+        <li class="slider-list-item">
+          <b>Долго, дорого,<br>cкрупулезно.</b>
+          <p>Математически выверенный дезайн <br> для вашего сайта или мобильного приложения.</p>
+          <a class="btn" href="#">Узнать больше</a>
+        </li>
+        <li class="slider-list-item">
+          <b class="slide-title">Любим математику<br>как никто другой</b>
+          <p>Никакого криатива, только математические формулы<br>для рассчета идеальных пропорций.</p>
+          <a class="btn" href="#">Узнать больше</a>
+        </li>
+        <li class="slider-list-item">
+          <b>Только ночь,<br>только хардкор</b>
+          <p>Работать днем, как все? Мы против этого.<br>Ближе к полуночи работа только начинается.</p>
+          <a class="btn" href="#">Узнать больше</a>
+        </li>
+      </div>
+    </section>
     <main class="container">
       <section class="servise clearfix">
         <div class="service-item">
@@ -113,50 +125,50 @@
           </table>
         </div>
       </section>
-          <div class="references">
-            <ul class="references-list">
-              <li class="references-item"><a href="#"><img href="#" alt="html"></a></li>
-              <li class="references-item"><a href="#"><img href="#" alt="borodinski"></a></li>
-              <li class="references-item"><a href="#"><img href="#" alt="pink"></a></li>
-              <li class="references-item"><a href="#"><img href="#" alt="mishka"></a></li>
-            </ul>
-          </div>
+      <div class="references">
+        <ul class="references-list">
+          <li class="references-item"><a href="#"><img href="#" alt="html"></a></li>
+          <li class="references-item"><a href="#"><img href="#" alt="borodinski"></a></li>
+          <li class="references-item"><a href="#"><img href="#" alt="pink"></a></li>
+          <li class="references-item"><a href="#"><img href="#" alt="mishka"></a></li>
+        </ul>
+      </div>
       <section class="contacts">
-          <p><img href="#" alt="map" width="" height=""></p>
-          <div class="contact-marker">
-            <img href="#" alt="marker" width="" height="">
-          </div>
-          <div class="contact-form">
-            <h3 class="contacts-tittle">Nerds design studio</h3>
-            <p>191186,Санкт-Петербург,<br>
-               ул. Б. Конюшенная, д.19/8<br>
-               <br>
-               тел. +7(812)275-7575
-            </p>
-            <a class="btn">Напиши нам</a>
-          </div>
+        <p><img href="#" alt="map" width="" height=""></p>
+        <div class="contact-marker">
+          <img href="#" alt="marker" width="" height="">
+        </div>
+        <div class="contact-form">
+          <h3 class="contacts-tittle">Nerds design studio</h3>
+          <p>191186,Санкт-Петербург,<br>
+            ул. Б. Конюшенная, д.19/8<br>
+            <br>
+            тел. +7(812)275-7575
+          </p>
+          <a class="btn">Напиши нам</a>
+        </div>
       </section>
     </main>
     <footer class="main-footer">
       <div class="container clearfix">
-      <div class="footer-social">
-        <ul class="footer-social-list">
-          <li class="footer-social-item">
-            <a href="#">Вконтакте</a>
-          </li>
-          <li class="footer-social-item">
-            <a href="#">Фейсбук</a>
-          </li>
-          <li class="footer-social-item">
-            <a href="#">Инстаграм</a>
-          </li>
-        </ul>
+        <div class="footer-social">
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a href="#">Вконтакте</a>
+            </li>
+            <li class="footer-social-item">
+              <a href="#">Фейсбук</a>
+            </li>
+            <li class="footer-social-item">
+              <a href="#">Инстаграм</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-discount">
+          <b>Давайте дружить, это выгодно!</b>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
       </div>
-      <div class="footer-discount">
-        <b>Давайте дружить, это выгодно!</b>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
-      </div>
-    </div>
     </footer>
   </body>
-</html>
+  </html>

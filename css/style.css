@@ -7,19 +7,22 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: #ffffff;
 }
+a {
+  text-decoration: none;
+}
 .clearfix::after {
   content: "";
   display: table;
   clear: both;
 }
 .main-header {
-  margin-bottom: 100px;
   background-color: #eeeeee;
 }
 .container {
-  width: 1160px;
+  width: 1200px;
   padding: 0 20px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 .main-navigation {
   float: left;
@@ -94,66 +97,160 @@ body {
 .cart a:hover {
   color: #f87f81;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0, 0, 0, 0);
+}
 .slider {
   position: relative;
-
+  background-color: #eeeeee;
 }
-.slide-1, .slide-2, .slide-3, .slider input[type="radio"] {
-  display: none;
-}
-.slide-paginator {
+.slider-controls {
   position: absolute;
-  bottom: 90px;
   left: 50%;
-  width: 300px;
-  margin-left: -150px;
+  bottom: 91px;
+  z-index: 100;
+
+  width: 160px;
+  height: 18px;
+
   text-align: center;
+  font-size: 0;
+  transform: translateX(-50%);
 }
-#slide1-btn:checked ~ .slide-1,
-#slide2-btn:checked ~ .slide-2,
-#slide3-btn:checked ~ .slide-3 {
-  display: block;
-}
-.slide-paginator label {
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
+.slider-controls label {
+  display:inline-block;
   width:8px;
-  height: 8px;
-  margin: 0 5px;
-  background: #ffffff;
-  border: 5px solid #ffffff;
+  height:8px;
+  margin:0 5px;
+  background:white;
+  border:3px solid white;
+  vertical-align:top;
+  border-radius:50%;
+  cursor:pointer;
+}
+/* .slider-controls i {
+  position: relative;
+
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  padding: 8px;
+
   border-radius: 50%;
   cursor: pointer;
 }
-#slide-btn:checked label::after {
+.slider-controls i::after {
   content: "";
+
   position: absolute;
-  top: 0px;
-  left: 0px;
-  display: block;
+  top:8px;
+  left:8px;
+  z-index: 1;
+
+  width: 18px;
+  height: 18px;
+
+  background: #ffffff;
+
+  border-radius: 50%;
+} */
+#product-1:checked ~ .slider-controls label[for="product-1"],
+#product-2:checked ~ .slider-controls label[for="product-2"],
+#product-3:checked ~ .slider-controls label[for="product-3"] {
+    background:#c1c1c1;
+}
+/* .slider-controls .active::before {
+  content: "";
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+
   width: 4px;
   height: 4px;
+  margin:-4px;
+
+  background-color: inherit;
   border: 2px solid #c1c1c1;
   border-radius: 50%;
+} */
+.slider-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
-#slide1-btn:checked ~ .slide-paginator label[for="slide1-btn"],
-#slide2-btn:checked ~ .slide-paginator label[for="slide2-btn"],
-#slide3-btn:checked ~ .slide-paginator label[for="slide3-btn"] {
-  background: transparent;
+.slider-list-item:nth-child(1) {
+  background-image: url("../img/slide1.png");
+  background-repeat: no-repeat;
+  background-position: 93% 18px;
 }
-.slide-content {
-  float: left;
-  padding-top: 46px;
-  width: 400px;
-  padding-top: 48px;
+.slider-list-item:nth-child(2) {
+  background-image: url("../img/slide2.png");
+  background-repeat: no-repeat;
+  background-position: 100% 0px;
 }
-.slide-img {
-  float: right;
-  width: 698px;
-  height: 413px;
-  padding-right: 31px;
-  padding-top: 13px;
+.slider-list-item:nth-child(3) {
+  background-image: url("../img/slide3.png");
+  background-repeat: no-repeat;
+  background-position: 100% 20px;
+}
+#product-1:checked ~ .slider-list .slider-list-item:nth-child(1) {
+  display: block;
+}
+#product-2:checked ~ .slider-list .slider-list-item:nth-child(2) {
+  display: block;
+}
+#product-3:checked ~ .slider-list .slider-list-item:nth-child(3) {
+  display: block;
+}
+.slider-list-item {
+  display: none;
+  padding: 73px 0 80px 0;
+}
+
+.slider-list-item b {
+  display: block;
+  max-width: 600px;
+  margin: 0;
+  margin-bottom: 27px;
+
+
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+}
+.slider-list-item p {
+  max-width: 430px;
+  margin: 0;
+  margin-bottom: 40px;
+}
+.btn {
+  display: block;
+  width: 240px;
+  padding: 13px 0;
+  font-size: 16px;
+  line-height: 18px;
+  color:#ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+
+  background-color:#fb565a;
+  border-radius: 3px;
+  border:none;
+}
+.btn:hover, .btn:focus {
+  background-color: #e74246;
+}
+.btn:active {
+  color:rgba(255, 255, 255, 0.3);
+
+  background-color: #d7373b;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1)inset;
 }
 .service-item {
   float: left;
