@@ -1,5 +1,5 @@
 body {
-  min-width:900px;
+  min-width:1200px;
   margin: 0;
   font-size: 16px;
   line-height: 24px;
@@ -16,6 +16,7 @@ a {
   clear: both;
 }
 .main-header {
+  position: relative;
   background-color: #eeeeee;
 }
 .container {
@@ -306,6 +307,8 @@ a {
 }
 /*---------------catalog.html-------------------------*/
 .inner-page-title {
+  float: left;
+  margin-left: 300px;
   padding:54px 0 84px;
   text-align:center
 }
