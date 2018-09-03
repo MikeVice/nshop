@@ -338,11 +338,22 @@ hr {
   text-transform: uppercase;
   margin-bottom: 50px;
 }
-.statistics-item th {
-  font-size: 45px;
+.statistics {
+  padding: 0;
+  width: 100%;
 }
-.statistics-item th:nth-child(3) {
-  text-align: center;
+
+.statistics-item th {
+  position: relative;
+  width: 120px;
+  font-size: 45px;
+  text-align: left;
+}
+.statistics-item th::after {
+  position: absolute;
+  content: "%";
+  font-size: 22px;
+  top: -7px;
 }
 .statistics-item td {
   padding-top: 26px;
