@@ -1,253 +1,247 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Каталог</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link href="css/style.css" type="text/css" rel="stylesheet" />
-  </head>
-  <body>
-    <header class="main-header">
-      <div class="container clearfix">
-        <nav class="main-navigation">
-          <div class="index-logo">
-            <a  class="main-header-logo">
-              <img src="img/logo.png" width="" height="" alt="Nerds-logo">
-            </a>
-          </div>
-          <ul class="site-navigation">
-            <li>
-              <a href="index.html">Студия</a>
-            </li>
-            <li>
-              <a href="#">Клиенты</a>
-            </li>
-            <li>
-              <a href="#">Магазин</a>
-            </li>
-            <li>
-              <a href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-          <div class="cart">
-            <a class="cart-item" href="#">Корзина</a>
-          </div>
-          <div class="inner-page-title">
-          <h1>Магазин готовых шаблонов</h1>
-          </div>
+<head>
+  <meta charset="utf-8">
+  <title>Каталог</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+  <header class="main-header">
+    <div class="container clearfix">
+      <nav class="main-navigation">
+        <div class="index-logo">
+          <a  class="main-header-logo">
+            <img src="img/logo.png" width="160" height="65" alt="Nerds-logo">
+          </a>
         </div>
-      </header>
-      <main class="container">
-           <div class="inner-content clearfix">
-             <form class="shop-filter" action="https://echo.htmlacademy.ru" method="get">
-               <fieldset>
-                 <legend>Стоимость:</legend>
-                   <div class="price-filter">
-                     <div class="progress-bar">
-                       <div class="left-slider"></div>
-                       <div class="right-slider"></div>
-                       <div class="bar"></div>
-                     </div>
-                   </div>
-                   <div class="mim-price"></div>
-                   <div class="max-price"></div>
-                   от
-                   <input type="text" name="min-price" value="0">
-                   до
-                   <input type="text" name="max-price" value="15000">
-               </fieldset>
-               <fieldset>
-                 <legend>Сетка:</legend>
-                 <label class="check-label disabled">
-                   <input type="radio" name="layout" value="adaptive" disabled>
-                   <span class="check-indicator"></span>
-                   Адаптивная
-                 </label>
-                 <label class="check-label">
-                   <input type="radio" name="layout" value="fixed" checked>
-                   <span class="check-indicator"></span>
-                   Фиксированная
-                 </label>
-                 <label class="check-label">
-                   <input type="radio" name="layout" value="fluid">
-                   <span class="check-indicator"></span>
-                   Резиновая
-                 </label>
-               </fieldset>
-               <fieldset>
-                 <legend>Особенности:</legend>
-                 <label class="check-label">
-                   <input type="checkbox" name="slider" checked>
-                   <span class="check-indicator"></span>
-                   Слайдер
-                 </label>
-                 <label class="check-label disabled">
-                   <input type="checkbox" name="features" checked disabled>
-                   <span class="check-indicator"></span>
-                   Блок преимуществ
-                 </label>
-                 <label class="check-label">
-                   <input type="checkbox" name="news" checked>
-                   <span class="check-indicator"></span>
-                   Новости
-                 </label>
-                 <label class="check-label">
-                   <input type="checkbox" name="gallery" checked>
-                   <span class="check-indicator"></span>
-                   Галерея
-                 </label>
-                 <label class="check-label">
-                   <input type="checkbox" name="cart">
-                   <span class="check-indicator"></span>
-                   Корзина
-                 </label>
-               </fieldset>
-               <button class="btn" type="submit">Показать</button>
-             </form>
-
-             <div class="catalog">
-               <div class="catalog-filer">
-                 <!-- <span>Сортировать:</span> -->
-                 <ul>
-                   <li><span>Сортировать:</span></li>
-                   <li class="curent"><a href="#">По цене</a></li>
-                   <li><a href="#">По типу</a></li>
-                   <li><a href="#">По функционалу</a></li>
-                   <li class="curent"><a href="#" title="По убыванию"><span class="sort descending">По убыванию</span></a></li>
-                   <li><a href="#" title="По возрастанию"><span class="sort ascending">По возрастанию</span></a></li>
-                 </ul>
-               </div>
-
-               <article class="catalog-item">
-                 <div class="item-head">
-                   <div></div>
-                   <div></div>
-                   <div></div>
-                 </div>
-                 <img class="item-image" src="pict/dovetail.jpg" width="240" height="240" alt="Dovetail интернет-магазин" >
-                 <div class="item-description">
-                   <h2>Dovetail</h2>
-                   <p>Интернет-магазин с&nbsp;галереей товаров</p>
-                   <a class="btn price-btn" href="cart.html">14 000 р.</a>
-                 </div>
-               </article>
-
-               <article class="catalog-item">
-                 <div class="item-head">
-                   <div></div>
-                   <div></div>
-                   <div></div>
-                 </div>
-                 <img class="item-image" src="pict/organic-thai.jpg" width="240" height="240" alt="Modern organic thai" >
-                 <div class="item-description">
-                   <h2>Modern organic thai</h2>
-                   <p>Сайт для&nbsp;ресторана быстрого питания</p>
-                   <a class="btn price-btn" href="cart.html">12 000 р.</a>
-                 </div>
-               </article>
-
-               <article class="catalog-item">
-                 <div class="item-head">
-                   <div></div>
-                   <div></div>
-                   <div></div>
-                 </div>
-                 <img class="item-image" src="pict/sunset.jpg" width="240" height="240" alt="Sunset интернет-магазин" >
-                 <div class="item-description">
-                   <h2>Sunset</h2>
-                   <p>Интернет-магазин с&nbsp;личным кабинетом</p>
-                   <a class="btn price-btn" href="cart.html">10 000 р.</a>
-                 </div>
-               </article>
-
-               <article class="catalog-item">
-                 <div class="item-head">
-                   <div></div>
-                   <div></div>
-                   <div></div>
-                 </div>
-                 <img class="item-image" src="pict/aviator.jpg" width="240" height="240" alt="Aviator одностраничный макет" >
-                 <div class="item-description">
-                   <h2>Aviator</h2>
-                   <p>Одностраничный макет с&nbsp;авторским дизайном</p>
-                   <a class="btn price-btn" href="cart.html">8 000 р.</a>
-                 </div>
-               </article>
-
-               <article class="catalog-item">
-                 <div class="item-head">
-                   <div></div>
-                   <div></div>
-                   <div></div>
-                 </div>
-                 <img class="item-image" src="pict/avenue.jpg" width="240" height="240" alt="Avenue макет для блога" >
-                 <div class="item-description">
-                   <h2>Avenue</h2>
-                   <p>Макет для блога с&nbsp;путишествиями</p>
-                   <a class="btn price-btn" href="cart.html">8 000 р.</a>
-                 </div>
-               </article>
-
-               <article class="catalog-item">
-                 <div class="item-head">
-                   <div></div>
-                   <div></div>
-                   <div></div>
-                 </div>
-                 <img class="item-image" src="pict/forte.jpg" width="240" height="240" alt="Forte макет для блога" >
-                 <div class="item-description">
-                   <h2>Forte</h2>
-                   <p>Отличный макет для&nbsp;личного блога</p>
-                   <a class="btn price-btn" href="cart.html">5 000 р.</a>
-                 </div>
-               </article>
-
-               <ul class="paginator">
-                 <li><a class="btn" href="#">1</a></li>
-                 <li><span class="curent">2</span></li>
-                 <li><a class="btn" href="#">3</a></li>
-                 <li><a class="btn next" href="#">Следующая</a></li>
-               </ul>
-             </div>
-           </div>
-         </main>
-        <section class="contacts container clearfix">
-          <p><img href="#" alt="map" width="" height=""></p>
-          <div class="contact-marker">
-            <img href="#" alt="marker" width="" height="">
-          </div>
-          <div class="contact-form">
-            <h3 class="contacts-tittle">Nerds design studio</h3>
-            <p>191186,Санкт-Петербург,<br>
-             ул. Б. Конюшенная, д.19/8<br>
-             <br>
-             тел. +7(812)275-7575
-           </p>
-           <a class="btn">Напиши нам</a>
-         </div>
-       </section>
-    <footer class="main-footer">
-      <div class="container clearfix">
-        <div class="footer-social">
-          <ul class="footer-social-list">
-            <li class="footer-social-item">
-              <a href="#">Вконтакте</a>
-            </li>
-            <li class="footer-social-item">
-              <a href="#">Фейсбук</a>
-            </li>
-            <li class="footer-social-item">
-              <a href="#">Инстаграм</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-discount">
-          <b>Давайте дружить, это выгодно!</b>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
-        </div>
+        <ul class="site-navigation">
+          <li>
+            <a href="index.html">Студия</a>
+          </li>
+          <li>
+            <a href="#">Клиенты</a>
+          </li>
+          <li class="active">
+            <a>Магазин</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="cart">
+        <a class="cart-item" href="cart.html">Корзина</a>
       </div>
-    </footer>
-  </body>
+      <div class="inner-page-title">
+        <h1>Магазин готовых шаблонов</h1>
+      </div>
+    </div>
+  </header>
+  <main class="container">
+    <div class="inner-content clearfix">
+      <form class="shop-filter" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset>
+          <legend>Стоимость:</legend>
+          <div class="price-filter">
+            <div class="range-controls">
+              <div class="scale"><div style="width:70%;" class="bar"></div></div>
+              <div class="toggle min-toggle"></div>
+              <div class="toggle max-toggle"></div>
+            </div>
+            <div class="price-controls">
+              ОТ<input type="text" class="min-price" value="0">
+              ДО<input type="text" class="max-price" value="15000">
+            </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Сетка:</legend>
+          <label class="check-label disabled">
+            <input type="radio" name="layout" value="adaptive" disabled>
+            <span class="check-indicator"></span>
+            Адаптивная
+          </label>
+          <label class="check-label">
+            <input type="radio" name="layout" value="fixed" checked>
+            <span class="check-indicator"></span>
+            Фиксированная
+          </label>
+          <label class="check-label">
+            <input type="radio" name="layout" value="fluid">
+            <span class="check-indicator"></span>
+            Резиновая
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Особенности:</legend>
+          <label class="check-label">
+            <input type="checkbox" name="slider" checked>
+            <span class="check-indicator"></span>
+            Слайдер
+          </label>
+          <label class="check-label disabled">
+            <input type="checkbox" name="features" checked disabled>
+            <span class="check-indicator"></span>
+            Блок преимуществ
+          </label>
+          <label class="check-label">
+            <input type="checkbox" name="news" checked>
+            <span class="check-indicator"></span>
+            Новости
+          </label>
+          <label class="check-label">
+            <input type="checkbox" name="gallery" checked>
+            <span class="check-indicator"></span>
+            Галерея
+          </label>
+          <label class="check-label">
+            <input type="checkbox" name="cart">
+            <span class="check-indicator"></span>
+            Корзина
+          </label>
+        </fieldset>
+        <button class="btn" type="submit">Показать</button>
+      </form>
+
+      <div class="catalog">
+        <div class="catalog-filer">
+          <!-- <span>Сортировать:</span> -->
+          <ul>
+            <li><span>Сортировать:</span></li>
+            <li class="curent"><a href="#">По цене</a></li>
+            <li><a href="#">По типу</a></li>
+            <li><a href="#">По функционалу</a></li>
+            <li class="curent"><a href="#" title="По убыванию"><span class="sort descending">По убыванию</span></a></li>
+            <li><a href="#" title="По возрастанию"><span class="sort ascending">По возрастанию</span></a></li>
+          </ul>
+        </div>
+
+        <article class="catalog-item">
+          <div class="item-head">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <img class="item-image" src="pict/dovetail.jpg" width="240" height="240" alt="Dovetail интернет-магазин" >
+          <div class="item-description">
+            <h2>Dovetail</h2>
+            <p>Интернет-магазин с&nbsp;галереей товаров</p>
+            <a class="btn price-btn" href="cart.html">14 000 р.</a>
+          </div>
+        </article>
+
+        <article class="catalog-item">
+          <div class="item-head">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <img class="item-image" src="pict/organic-thai.jpg" width="240" height="240" alt="Modern organic thai" >
+          <div class="item-description">
+            <h2>Modern organic thai</h2>
+            <p>Сайт для&nbsp;ресторана быстрого питания</p>
+            <a class="btn price-btn" href="cart.html">12 000 р.</a>
+          </div>
+        </article>
+
+        <article class="catalog-item">
+          <div class="item-head">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <img class="item-image" src="pict/sunset.jpg" width="240" height="240" alt="Sunset интернет-магазин" >
+          <div class="item-description">
+            <h2>Sunset</h2>
+            <p>Интернет-магазин с&nbsp;личным кабинетом</p>
+            <a class="btn price-btn" href="cart.html">10 000 р.</a>
+          </div>
+        </article>
+
+        <article class="catalog-item">
+          <div class="item-head">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <img class="item-image" src="pict/aviator.jpg" width="240" height="240" alt="Aviator одностраничный макет" >
+          <div class="item-description">
+            <h2>Aviator</h2>
+            <p>Одностраничный макет с&nbsp;авторским дизайном</p>
+            <a class="btn price-btn" href="cart.html">8 000 р.</a>
+          </div>
+        </article>
+
+        <article class="catalog-item">
+          <div class="item-head">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <img class="item-image" src="pict/avenue.jpg" width="240" height="240" alt="Avenue макет для блога" >
+          <div class="item-description">
+            <h2>Avenue</h2>
+            <p>Макет для блога с&nbsp;путишествиями</p>
+            <a class="btn price-btn" href="cart.html">8 000 р.</a>
+          </div>
+        </article>
+
+        <article class="catalog-item">
+          <div class="item-head">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <img class="item-image" src="pict/forte.jpg" width="240" height="240" alt="Forte макет для блога" >
+          <div class="item-description">
+            <h2>Forte</h2>
+            <p>Отличный макет для&nbsp;личного блога</p>
+            <a class="btn price-btn" href="cart.html">5 000 р.</a>
+          </div>
+        </article>
+
+        <ul class="paginator">
+          <li><a class="" href="#">1</a></li>
+          <li><span class="curent">2</span></li>
+          <li><a class="" href="#">3</a></li>
+          <li><a class="" href="#">Следующая</a></li>
+        </ul>
+      </div>
+    </div>
+  </main>
+  <section class="contacts  clearfix">
+    <div class="contact-form">
+      <b class="contacts-tittle">Nёrds design studio</b>
+      <p>191186, Санкт-Петербург,<br>
+        ул. Б. Конюшенная, д. 19/8<br>
+        <br>
+        тел. +7 (812) 275-75-75
+      </p>
+      <a class="btn contact-btn">Напишите нам</a>
+    </div>
+  </section>
+  <footer class="main-footer">
+    <div class="container clearfix">
+      <div class="footer-social">
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a class="vk" href="#"></a>
+          </li>
+          <li class="footer-social-item">
+            <a class="fb" href="#"></a>
+          </li>
+          <li class="footer-social-item">
+            <a class="inst" href="#"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-discount">
+        <b>Давайте дружить, это выгодно!</b>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </div>
+  </footer>
+</body>
 </html>
