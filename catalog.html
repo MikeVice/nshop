@@ -52,19 +52,19 @@
             </div>
             <div class="price-controls">
               ОТ<input type="text" class="min-price" value="0">
-              ДО<input type="text" class="max-price" value="15000">
+              ДО<input type="text" class="max-price" value="15 000">
             </div>
           </div>
         </fieldset>
         <fieldset>
           <legend>Сетка:</legend>
           <label class="check-label disabled">
-            <input type="radio" name="layout" value="adaptive" disabled>
+            <input type="radio" name="layout" value="adaptive" checked disabled>
             <span class="check-indicator"></span>
             Адаптивная
           </label>
           <label class="check-label">
-            <input type="radio" name="layout" value="fixed" checked>
+            <input type="radio" name="layout" value="fixed" >
             <span class="check-indicator"></span>
             Фиксированная
           </label>
@@ -82,7 +82,7 @@
             Слайдер
           </label>
           <label class="check-label disabled">
-            <input type="checkbox" name="features" checked disabled>
+            <input type="checkbox" name="features"  disabled>
             <span class="check-indicator"></span>
             Блок преимуществ
           </label>
@@ -92,7 +92,7 @@
             Новости
           </label>
           <label class="check-label">
-            <input type="checkbox" name="gallery" checked>
+            <input type="checkbox" name="gallery">
             <span class="check-indicator"></span>
             Галерея
           </label>
@@ -102,7 +102,7 @@
             Корзина
           </label>
         </fieldset>
-        <button class="btn" type="submit">Показать</button>
+        <button class="btn form-btn" type="submit">Показать</button>
       </form>
 
       <div class="catalog">
@@ -112,7 +112,7 @@
             <li><span>Сортировать:</span></li>
             <li class="curent"><a href="#">По цене</a></li>
             <li><a href="#">По типу</a></li>
-            <li><a href="#">По функционалу</a></li>
+            <li><a href="#">По названию</a></li>
             <li class="curent"><a href="#" title="По убыванию"><span class="sort descending">По убыванию</span></a></li>
             <li><a href="#" title="По возрастанию"><span class="sort ascending">По возрастанию</span></a></li>
           </ul>

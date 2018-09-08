@@ -584,27 +584,28 @@ hr {
   font-weight: 580;
 }
 .inner-content {
-  padding-top: 60px;
+  padding-top: 57px;
 }
 
 .shop-filter {
   float: left;
-  width: 240px;
+  width: 260px;
 }
 .shop-filter fieldset {
   margin-bottom: 50px;
   border: none;
+  padding:0;
 }
 .shop-filter legend {
   font-size: 18px;
   line-height:30px;
   font-weight: bold;
   text-transform: uppercase;
-  padding-bottom: 18px;
+  margin-bottom: 13px;
 }
 .price-filter {
+  margin-top: 34px;
   width:100%;
-
 }
 
 .range-controls {
@@ -644,7 +645,7 @@ hr {
   left: 145px;
 }
 .price-controls input {
-  width:50px;
+  width:60px;
   padding: 8px 10px;
   margin-left:10px;
   border:none;
@@ -657,12 +658,126 @@ hr {
   color: #283136;
   border-radius: 5px;
 }
+.price-controls  .min-price {
+  margin-right: 28px;
+}
 .price-controls {
   white-space: nowrap;
 }
+
+
+.shop-filter input[type="radio"],
+.shop-filter input[type="checkbox"] {
+  display: none;
+}
+.check-indicator {
+  position: absolute;
+  top:0;
+  left: 0;
+  display: block;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #c1c1c1;
+  border-radius: 3px;
+}
+.check-label {
+  position: relative;
+  display: block;
+  margin-bottom: 20px;
+  padding-left: 35px;
+
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: none;
+
+  cursor: pointer;
+}
+.check-label:last-child {
+  margin-bottom: 0;
+}
+input[type="radio"]+ .check-indicator {
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked~ .check-indicator::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+
+  display: block;
+  width:8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #c1c1c1;
+}
+input[type="checkbox"]:checked + .check-indicator::after,
+input[type="checkbox"]:checked + .check-indicator::before {
+  content: "";
+  position: absolute;
+
+  display: block;
+  width: 20px;
+  height: 4px;
+
+  background-color: #c1c1c1;
+  border-radius: 1px;
+}
+
+input[type="checkbox"]:checked + .check-indicator::before {
+  top: 3px;
+  left: 2px;
+
+  border: 2px solid #ffffff;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+input[type="checkbox"]:checked + .check-indicator::after {
+  top: 8px;
+  left: 0px;
+
+  width: 11px;
+
+  -webkit-transform: rotate(45deg);
+
+          transform: rotate(45deg);
+}
+
+.check-label.disabled .check-indicator {
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+.check-label.disabled {
+  cursor: not-allowed;
+  opacity: 0.3;
+}
+
+.form-btn {
+  width: 100%;
+  background-color: #c1c1c1;
+}
+.form-btn:hover {
+  background-color: #e5e5e5;
+}
+.form-btn:active {
+  background-color: #d5d5d5;
+}
+
 .catalog {
   float: right;
   width: 760px;
+}
+.catalog-filer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.catalog-filer li {
+  display: inline-block;
+  vertical-align: top; 
+
 }
 .catalog-item {
   display: inline-block;
