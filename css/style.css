@@ -440,7 +440,7 @@ hr {
   min-height: 416px;
   background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
-  background-position: 100%;
+  background-position: 50%;
 }
 .contact-form {
   position: absolute;
